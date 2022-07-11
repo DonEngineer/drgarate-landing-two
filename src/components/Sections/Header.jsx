@@ -12,13 +12,13 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">We are Digital Agency.</h1>
+          <h1 className="extraBold font60">Salud ocupacional integral.</h1>
           <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Proporcionamos asesoría y atención médica necesarias para alcancar altos estándares de salud fisica, mental y social en los 
+            colaboradores, así como prevenir la perdida de la salud derivada de las condiciones de trabajo.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" />
+            <FullButton title="Me interesa" />
           </BtnWrapper>
         </div>
       </LeftSide>
@@ -31,9 +31,9 @@ export default function Header() {
             </QuotesWrapper>
             <div>
               <p className="font15 whiteColor">
-                <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
+                <em>Desde que colaboramos con el Dr. Garate la condición laboral de nuestro equipo a mejorado de forma importante.</em>
               </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Ralph Waldo Emerson</p>
+              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Anónimo</p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>
@@ -46,13 +46,12 @@ export default function Header() {
   );
 }
 
-
 const Wrapper = styled.section`
-  padding-top: 80px;
   width: 100%;
-  min-height: 840px;
+  min-height: 780px;
   @media (max-width: 960px) {
     flex-direction: column;
+    padding-top: 80px;
   }
 `;
 const LeftSide = styled.div`
@@ -60,7 +59,7 @@ const LeftSide = styled.div`
   height: 100%;
   @media (max-width: 960px) {
     width: 100%;
-    order: 2;
+    order: 1;
     margin: 50px 0;
     text-align: center;
   }
@@ -73,7 +72,7 @@ const RightSide = styled.div`
   height: 100%;
   @media (max-width: 960px) {
     width: 100%;
-    order: 1;
+    order: 2;
     margin-top: 30px;
   }
 `;
