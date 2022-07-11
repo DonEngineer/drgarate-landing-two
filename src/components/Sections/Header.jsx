@@ -13,7 +13,7 @@ export default function Header() {
       <LeftSide className="flexCenter">
         <div>
           <h1 className="extraBold font60">Salud ocupacional integral.</h1>
-          <HeaderP className="font13 semiBold">
+          <HeaderP className="font15">
             Proporcionamos asesoría y atención médica necesarias para alcancar altos estándares de salud fisica, mental y social en los 
             colaboradores, así como prevenir la perdida de la salud derivada de las condiciones de trabajo.
           </HeaderP>

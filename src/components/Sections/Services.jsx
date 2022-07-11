@@ -3,8 +3,10 @@ import React from "react";
 import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
-import {Wrapper, Advertising, AddLeft, AddRight, AddRightInner, ButtonsRow, ServiceBoxWrapper, ServiceBoxRow,
-  HeaderInfo, AddImgWrapp1, AddImgWrapp2, AddImgWrapp3, AddImgWrapp4 } from "./Services-styles";
+import {
+  Wrapper, Advertising, AddLeft, AddRight, AddRightInner, ButtonsRow, ServiceBoxWrapper, ServiceBoxRow,
+  HeaderInfo, AddImgWrapp1, AddImgWrapp2, AddImgWrapp3, AddImgWrapp4
+} from "./Services-styles";
 // Assets
 import AddImage1 from "../../assets/img/add/1.png";
 import AddImage2 from "../../assets/img/add/2.png";
@@ -23,10 +25,10 @@ export default function Services() {
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">Servicios</h1>
-            <p className="font13">
-              Buscando prevenir los trastornos de salud derivados de las condiciones de trabajo y proteger contra los
+            <p className="font18">
+              Efectivos para prevenir los trastornos de salud derivados de las condiciones de trabajo y proteger contra los
               <br />
-              riesgos derivados de factores adversos en el medio laboral, ofrecemos:
+              riesgos originados por factores adversos en el medio laboral.
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
@@ -39,23 +41,23 @@ export default function Services() {
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="estudios"
-                title="Estudios"
-                subtitle={EstudiosList()}
-              />
-            </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
-              <ServiceBox
                 icon="asesoria"
                 title="Asesoria y capacitación"
                 subtitle={AsesoriaList()}
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox 
-                icon="seguimiento" 
-                title="Seguimiento" 
+              <ServiceBox
+                icon="seguimiento"
+                title="Seguimiento"
                 subtitle={SeguimientoList()} />
+            </ServiceBoxWrapper>
+            <ServiceBoxWrapper>
+              <ServiceBox
+                icon="estudios"
+                title="Estudios"
+                subtitle={EstudiosList()}
+              />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -64,18 +66,14 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
-                <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                <h4 className="font15 semiBold">Un gran equípo detras</h4>
+                <h2 className="font30 extraBold">Staff de especialidades médicas</h2>
+                <p className="font18">
+                  Traumatología, cirugia plástica, oftalmología, entre otras.
                 </p>
                 <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
-                  </div>
-                  <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border />
+                    <FullButton title="Quiero mas información" action={() => alert("clicked")} border />
                   </div>
                 </ButtonsRow>
               </AddLeft>
@@ -108,29 +106,27 @@ export default function Services() {
 }
 
 const ExamenesList = () => {
-  return (<div>
+  return (
     <ul>
       <li type="circle">Nuevo ingreso.</li>
       <li type="circle">Periódicos (Detección de enfermedades profesionales).</li>
       <li type="circle">Especiales.</li>
       <li type="circle">A operadores de montacargas, grúas y equipo móvil.</li>
-    </ul>
-  </div>);
+    </ul>);
 }
 
 const EstudiosList = () => {
-  return (<div>
+  return (
     <ul>
       <li type="circle">Ergonomicos.</li>
       <li type="circle">De laboratorio.</li>
       <li type="circle">Audiometrías.</li>
       <li type="circle">Espirometrías.</li>
-    </ul>
-  </div>);
+    </ul>);
 }
 
 const AsesoriaList = () => {
-  return (<div>
+  return (
     <ul>
       <li type="circle">Disminución de la prima de riesgo.</li>
       <li type="circle">Prevenir riesgos de trabajo.</li>
@@ -141,19 +137,17 @@ const AsesoriaList = () => {
       <li type="circle">Uso de equipo de protección personal.</li>
       <li type="circle">Salud e higiene en el trabajo.</li>
       <li type="circle">Escuela de columna lumbar.</li>
-      <li type="circle">Busqueda rescate y evacuación.</li>
-    </ul>
-  </div>);
+      <li type="circle">Busqueda, rescate y evacuación.</li>
+    </ul>);
 }
 
 const SeguimientoList = () => {
-  return (<div>
+  return (
     <ul>
       <li type="circle">Atención de accidentes de trabajo.</li>
       <li type="circle">Manejo de incapacidades.</li>
       <li type="circle">Incapacidades prolongadas.</li>
       <li type="circle">Abasto de medicamentos.</li>
       <li type="circle">Control de la salud de los trabajadores.</li>
-    </ul>
-  </div>);
+    </ul>);
 }

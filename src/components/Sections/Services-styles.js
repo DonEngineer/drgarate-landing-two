@@ -10,7 +10,7 @@ export const ServiceBoxRow = styled.div`
 `;
 export const ServiceBoxWrapper = styled.div`
   width: 20%;
-  margin-right: 5%;
+  margin-left: 5%;
   padding: 80px 0;
   @media (max-width: 860px) {
     width: 100%;

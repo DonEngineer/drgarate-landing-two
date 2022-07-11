@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {Wrapper, NavInner, BurderWrapper, UlWrapper, UlWrapperRight} from "./TopNavbar-style";
+import { Wrapper, NavInner, BurderWrapper, UlWrapper, UlWrapperRight } from "./TopNavbar-style";
 import { Link } from "react-scroll";
 // Components
 import Sidebar from "../Nav/Sidebar";
@@ -24,7 +24,7 @@ export default function TopNavbar() {
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
-        <NavInner style={{paddingLeft: 0}} className="container flexSpaceCenter">
+        <NavInner style={{ paddingLeft: 0 }} className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <LogoIcon />
             <h1 className="font20 extraBold">
@@ -47,22 +47,22 @@ export default function TopNavbar() {
             </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="projects" spy={true} smooth={true} offset={-80}>
-                Projects
+                Participaciones
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
+            {/*<li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="blog" spy={true} smooth={true} offset={-80}>
                 Blog
               </Link>
-            </li>
+            </li>*/}
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="pricing" spy={true} smooth={true} offset={-80}>
-                Pricing
+                Precios
               </Link>
             </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
-                Contact
+                Contacto
               </Link>
             </li>
           </UlWrapper>

@@ -6,11 +6,12 @@ import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
 import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
 import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
 import DoctorIcon from "../../assets/svg/Services/DoctorIcon";
+import SeguimientoIcon from "../../assets/svg/Services/SeguimientoIcon";
+import EstudiosIcon from "../../assets/svg/Services/EstudioIcon";
+import AsesoriaIcon from "../../assets/svg/Services/AsesoriaIcon";
 
 export default function ServiceBox({icon, title, subtitle}) {
   let getIcon;
-
-  console.log(subtitle);
 
   switch (icon) {
     case "roller":
@@ -28,11 +29,19 @@ export default function ServiceBox({icon, title, subtitle}) {
     case "doctor":
       getIcon = <DoctorIcon />;
       break;
+    case "seguimiento":
+      getIcon = <SeguimientoIcon />;
+      break;
+    case "estudios":
+      getIcon = <EstudiosIcon />;
+      break;
+    case "asesoria":
+      getIcon = <AsesoriaIcon />;
+      break;
     default:
       getIcon = <RollerIcon />;
       break;
   }
-
 
   return (
     <Wrapper className="flex flexColumn">
@@ -55,13 +64,14 @@ const TitleStyle = styled.h2`
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 10px 0 20px;
   @media (max-width: 860px) {
     padding: 20px 0;
   }
 `;
-const SubtitleStyle = styled.p`
+const SubtitleStyle = styled.div`
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
+  text-align: left;
 `;
